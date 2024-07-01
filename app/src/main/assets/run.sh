@@ -22,6 +22,7 @@ fi
 echo "开始解析ROM"
 /data/local/7za x "$zipDir"/"$rn" -r -o/data/local/update >/dev/null
 echo "解析完毕"
+chmod a+r -R /data/local/update
 
 if [ -f /data/local/update/payload.bin" ]; then
     echo "ROM核心文件校验成功"
