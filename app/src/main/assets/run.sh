@@ -15,7 +15,7 @@ else
     chmod 777 /data/local/7za
 fi
 
-if [ -f /data/local/update ]; then
+if [ -d "/data/local/update" ]; then
     rm -rf /data/local/update
 fi
 
@@ -24,7 +24,7 @@ echo "开始解析ROM"
 echo "解析完毕"
 chmod a+r -R /data/local/update
 
-if [ -f /data/local/update/payload.bin" ]; then
+if [ -f "/data/local/update/payload.bin" ]; then
     echo "ROM核心文件校验成功"
     source /data/local/update/payload_properties.txt
     update_engine_client --payload=file:///data/local/update/payload.bin --update --headers="
