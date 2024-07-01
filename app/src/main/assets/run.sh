@@ -8,25 +8,25 @@ rn=$2
 
 setprop persist.logd.size 8388608
 
-if [ ! -f "/data/7za" ]; then
-    cp -r "$workdir"/7za /data
-    chmod 777 /data/7za
+if [ ! -f "/data/local/7za" ]; then
+    cp -r "$workdir"/7za /data/local
+    chmod 777 /data/local/7za
 else
-    chmod 777 /data/7za
+    chmod 777 /data/local/7za
 fi
 
-if [ ! -f "$zipDir"/update ]; then
-    rm -rf "$zipDir"/update*
+if [ -f /data/local/update ]; then
+    rm -rf /data/local/update
 fi
 
 echo "开始解析ROM"
-/data/7za x "$zipDir"/"$rn" -r -o"$zipDir"/update >/dev/null
+/data/local/7za x "$zipDir"/"$rn" -r -o/data/local/update >/dev/null
 echo "解析完毕"
 
-if [ -f "$zipDir/update/payload.bin" ]; then
+if [ -f /data/local/update/payload.bin" ]; then
     echo "ROM核心文件校验成功"
-    source "$zipDir"/update/payload_properties.txt
-    update_engine_client --payload=file://"$zipDir"/update/payload.bin --update --headers="
+    source /data/local/update/payload_properties.txt
+    update_engine_client --payload=file:///data/local/update/payload.bin --update --headers="
 FILE_HASH=$FILE_HASH
 FILE_SIZE=$FILE_SIZE
 METADATA_HASH=$METADATA_HASH
