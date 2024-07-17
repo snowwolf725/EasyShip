@@ -1,19 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">一叶孤舟</string>
+    <string name="app_name">EasyShip</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="main_tips" tools:ignore="TypographyDashes"><![CDATA[软件运行前提(离线版)：<br>1. 设备获取Root权限且以授予本软件权限；
-		<br>2. 设备支持<a href="http://t.csdn.cn/aUy4F">V-AB系统分区</a>；
+    <string name="main_tips" tools:ignore="TypographyDashes"><![CDATA[Prerequisites for Running the Software：
+        <br>1. The device must have root access, and the software permissions should be granted.
+		<br>2. Device support : <a href="https://source.android.com/docs/core/ota/virtual_ab">V-AB</a>；
 		<br> <br>
-		可能出现的问题：
+		Issues：
 		<br>
-		1. 选择ROM路径时一定要从“本机存储”中选择，否则可能会无法选择ROM；
+		1. When selecting the ROM path, be sure to choose from “Local Storage.” Otherwise, you might not be able to select the ROM.
 		<br>
-		2. 由于Android对后台服务的限制，请在更新时尽量保证本软件为前台应用（当通知栏出现更新进度后就可以挂后台了）；
+		2. Due to Android’s restrictions on background services, try to keep this software as a foreground app during updates (you can move it to the background once the update progress appears in the notification bar).
 		<br>
-		3. 经测试，本软件支持官方ROM升级/降级操作，官改包与类原生请用户自行测试；
+		3. This software supports official ROM upgrades/downgrades. For custom ROMs and near-stock ROMs, users should test them independently.
 		<br>
-		4. 如果提示更新失败，请重启手机并等候一段时间再进行刷写操作
+		4. If you receive an update failure prompt, restart your phone and wait for some time before attempting the flashing operation.
 		<br>
-		5. 如有其他问题欢迎<a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=1009818916&card_type=group&source=qrcode">补充</a>~]]></string>
+		5. Feel free to add any other questions or concerns you may have.<a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=1009818916&card_type=group&source=qrcode">Here</a>~]]></string>
 </resources>

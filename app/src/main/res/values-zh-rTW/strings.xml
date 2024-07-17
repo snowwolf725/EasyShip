@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">一叶孤舟</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_tips" tools:ignore="TypographyDashes"><![CDATA[軟件運行前提(離線版)：
+        <br>1. 設備獲取Root權限且以授予本軟件權限；
+		<br>2. 設備支持 : <a href="https://source.android.com/docs/core/ota/virtual_ab?hl=zh-tw">V-AB系統分區</a>；
+		<br> <br>
+		可能出現的問題：
+		<br>
+		1. 選擇ROM路徑時一定要從“本機存儲”中選擇，否則可能會無法選擇ROM；
+		<br>
+		2. 由於Android對後台服務的限制，請在更新時盡量保證本軟體為前台應用（當通知欄出現更新進度後就可以掛後台了）；
+		<br>
+		3. 經測試，本軟體支援官方ROM升級/降級操作，官改包與類原生請用戶自行測試；
+		<br>
+		4. 如果提示更新失敗，請重啟手機並等候一段時間再進行刷寫操作
+		<br>
+		5. 如有其他問題歡迎<a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=1009818916&card_type=group&source=qrcode">補充</a>~]]></string>
+</resources>
