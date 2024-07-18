@@ -27,12 +27,12 @@
                 android:layout_marginEnd="@dimen/dp_5"/>
 
             <com.pointer.wave.easyship.widget.MarqueeTextView
+                android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/sp_16"
+                android:text="@string/tip_title"
                 android:textColor="@color/text_black"
-                android:text="提示"
-                android:id="@+id/text"/>
+                android:textSize="@dimen/sp_16" />
 
         </LinearLayout>
 

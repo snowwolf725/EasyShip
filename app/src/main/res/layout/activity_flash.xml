@@ -38,14 +38,14 @@
                 app:wlv_wave_background_Color="@color/green"/>
 
             <TextView
+                android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="开始刷写ROM"
-                android:textSize="@dimen/sp_20"
                 android:gravity="center"
-                android:id="@+id/title"
+                android:text="@string/start_flash_rom"
                 android:textColor="@color/white"
-                android:textStyle="bold"/>
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
 
         </androidx.cardview.widget.CardView>
 
@@ -75,16 +75,16 @@
                 android:layout_margin="@dimen/dp_20">
 
                 <EditText
+                    android:id="@+id/rom_path"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint=" 选择刷机包"
                     android:background="@android:color/transparent"
-                    android:textColorHint="@color/gray_50"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/sp_17"
-                    android:singleLine="true"
                     android:ellipsize="middle"
-                    android:id="@+id/rom_path"/>
+                    android:hint="@string/select_rom"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_50"
+                    android:textSize="@dimen/sp_17" />
 
             </LinearLayout>
 
@@ -102,9 +102,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="选择"
-                android:gravity="center"
                 android:layout_margin="@dimen/dp_15"
+                android:gravity="center"
+                android:text="@string/select_rom_btn"
                 android:textColor="@color/white" />
 
         </androidx.cardview.widget.CardView>
@@ -121,20 +121,20 @@
         android:layout_marginEnd="@dimen/dp_15">
 
         <TextView
+            android:id="@+id/start_flash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="开始刷机"
-            android:textSize="@dimen/sp_20"
-            android:textColor="@color/white"
             android:layout_marginBottom="@dimen/dp_5"
-            android:id="@+id/start_flash"
             android:background="@drawable/shape_flash_button"
-            android:paddingTop="@dimen/dp_10"
-            android:paddingBottom="@dimen/dp_10"
-            android:paddingStart="@dimen/dp_20"
-            android:paddingEnd="@dimen/dp_20"
             android:gravity="center"
-            android:transitionName="start_button"/>
+            android:paddingStart="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="@string/start_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:transitionName="start_button" />
 
     </LinearLayout>
 
@@ -170,9 +170,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dp_10"
-                    android:text="小提示"
+                    android:text="@string/tip_title"
                     android:textColor="@color/gray"
-                    android:textSize="@dimen/sp_17"/>
+                    android:textSize="@dimen/sp_17" />
 
             </LinearLayout>
 

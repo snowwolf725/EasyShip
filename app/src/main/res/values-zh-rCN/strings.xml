@@ -2,6 +2,15 @@
     <string name="app_name">一叶孤舟</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help_title">使用方法</string>
+    <string name="faq_title">疑难解答</string>
+    <string name="download_title">下载ROM</string>
+    <string name="tip_title">提示</string>
+    <string name="select_btn">选择档案</string>
+    <string name="select_rom">选择刷机包</string>
+    <string name="select_rom_btn">选择</string>
+    <string name="start_btn">开始刷机</string>
+    <string name="start_flash_rom">开始刷机</string>
     <string name="main_tips" tools:ignore="TypographyDashes"><![CDATA[软件运行前提(离线版)：<br>1. 设备获取Root权限且以授予本软件权限；
 		<br>2. 设备支持 : <a href="https://source.android.com/docs/core/ota/virtual_ab?hl=zh-cn">V-AB系统分区</a>；
 		<br> <br>
