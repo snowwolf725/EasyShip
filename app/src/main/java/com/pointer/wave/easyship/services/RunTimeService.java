@@ -70,7 +70,7 @@ public class RunTimeService extends Service implements RealtimeProcessInterface 
 
         cacheDao = new CacheDao(work);
         EasyShip.setProcess(new RealtimeProcess(this));
-        EasyShip.getProcess().setCommand(cacheDao.getCmd(), "rm -rf " +  new File(work).getParent() + "/update*");
+        EasyShip.getProcess().setCommand(cacheDao.getCmd(), "rm -rf /data/ota_package/update");
         new Handler(getMainLooper()).post(FlashActivity::startAnimation);
         if (FlashActivity.startFlash!=null){
             FlashActivity.startFlash.setText("刷机中，请稍候...");

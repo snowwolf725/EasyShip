@@ -110,6 +110,8 @@ public class CacheDao {
     }
 
     public String getCmd(){
+        File file = new File(workdir);
+        file.getPath();
         return setParams(getShellPath(), new File(workdir).getParent(), new File(workdir).getName(), getRootDir());
     }
 
