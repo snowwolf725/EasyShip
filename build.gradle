@@ -4,11 +4,12 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jcenter.bintray.com/' }
         // maven { url 'https://repo1.maven.org/maven2/' }
-        maven{ url 'https://maven.aliyun.com/repository/public/' }
-        maven{ url 'https://maven.aliyun.com/repository/central' }
-        maven{ url 'https://maven.aliyun.com/repository/google' }
-        maven{ url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        // maven { url 'https://maven.aliyun.com/repository/public/' }
+        // maven { url 'https://maven.aliyun.com/repository/central' }
+        // maven { url 'https://maven.aliyun.com/repository/google' }
+        // maven { url 'https://maven.aliyun.com/repository/gradle-plugin'}
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.2'
