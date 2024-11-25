@@ -78,11 +78,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //全面屏适配
-    implementation 'com.gyf.immersionbar:immersionbar:3.2.2'
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
     // fragment快速实现（可选）
-    implementation 'com.gyf.immersionbar:immersionbar-components:3.2.2'
+    implementation 'com.geyifeng.immersionbar:immersionbar-components:3.2.2'
     // kotlin扩展（可选）
-    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.2.2'
+    implementation 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2'
 
     //高斯模糊控件
     implementation 'com.github.mmin18:realtimeblurview:1.2.1'
